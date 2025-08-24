@@ -1,0 +1,81 @@
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--navbar-bg);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 50px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text-color);
+  position: relative;
+  transition: color 0.3s;
+}
+
+/* Active link underline animation */
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #007bff;
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  background: var(--button-bg);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Light & Dark Variables */
+body.light {
+  --navbar-bg: #ffffff;
+  --text-color: #222;
+  --button-bg: #f0f0f0;
+}
+
+body.dark {
+  --navbar-bg: #1e1e1e;
+  --text-color: #fff;
+  --button-bg: #333;
+}

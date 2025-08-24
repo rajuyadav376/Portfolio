@@ -1,0 +1,84 @@
+.about {
+  padding: 60px 20px;
+  background-color: var(--about-bg);
+  color: var(--about-text);
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: var(--about-heading);
+}
+
+.about-info {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  padding: 20px;
+  background-color: var(--about-card-bg);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.about-info h3 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: var(--about-subheading);
+}
+
+.about-info ul {
+  margin: 10px 0 20px 20px;
+  padding-left: 10px;
+}
+
+.about-info li {
+  margin-bottom: 10px;
+  list-style-type: square;
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+body.light {
+  --about-bg: #fdfdfd;
+  --about-text: #333;
+  --about-heading: #222;
+  --about-subheading: #444;
+  --about-card-bg: #fff;
+  --skill-bg: #f2f2f2;
+  --skill-hover-bg: #e8e8e8;
+  --btn-bg: #007bff;
+  --btn-hover-bg: #0056b3;
+  --btn-text: #fff;
+}
+
+body.dark {
+  --about-bg: #1a1a1a;
+  --about-text: #e0e0e0;
+  --about-heading: #ffffff;
+  --about-subheading: #dddddd;
+  --about-card-bg: #262626;
+  --skill-bg: #333333;
+  --skill-hover-bg: #444444;
+  --btn-bg: #ffd700;
+  --btn-hover-bg: #e6c200;
+  --btn-text: #000;
+}
